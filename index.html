@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC vs Consola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="encuesta">
+        <div class="titulo">
+            <h1>🎮 PC VS CONSOLA 💻</h1>
+        </div>
+
+        <p class="intro">Queremos conocer tu opinión sobre la mejor forma de jugar.</p>
+
+        <form>
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+            </div>
+
+            <div class="pregunta">
+                <h2>¿Qué prefieres?</h2>
+
+                <div class="opciones">
+                    <label class="opcion">
+                        <input type="radio" name="plataforma" value="pc" required>
+                        PC
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="plataforma" value="consola">
+                        Consola
+                    </label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="juegos">¿Qué tipo de juegos te gustan?</label>
+                <select id="juegos" name="juegos" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="accion">Acción</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="deportes">Deportes</option>
+                    <option value="terror">Terror</option>
+                    <option value="carreras">Carreras</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="opinion">¿Por qué lo prefieres?</label>
+                <textarea id="opinion" name="opinion" rows="4" placeholder="Escribe tu opinión..."></textarea>
+            </div>
+
+            <button type="submit">ENVIAR RESPUESTA</button>
+        </form>
+    </main>
+</body>
+</html>

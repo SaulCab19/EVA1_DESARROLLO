@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 50px 15px;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, #777, transparent 35%),
+        linear-gradient(135deg, #555, #292929);
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.encuesta {
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+}
+
+.titulo {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: #202020;
+}
+
+.intro {
+    max-width: 400px;
+    margin: 15px auto 35px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.campo {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4f8f62;
+    box-shadow: 0 0 0 2px rgba(79, 143, 98, 0.12);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+select option {
+    background: white;
+    color: #222;
+}
+
+.pregunta {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin: 0 0 12px;
+    font-size: 17px;
+    color: #222;
+}
+
+.opciones {
+    display: flex;
+    gap: 15px;
+}
+
+.opcion {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #d0d0d0;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.65);
+    color: #333;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.opcion:hover {
+    border-color: #4f8f62;
+    background: rgba(79, 143, 98, 0.08);
+}
+
+.opcion input {
+    margin: 0;
+    accent-color: #4f8f62;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 8px;
+    background: #4f8f62;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3f7650;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 25px 10px;
+    }
+
+    .encuesta {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .opciones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
